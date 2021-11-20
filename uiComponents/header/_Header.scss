@@ -1,0 +1,12 @@
+.headingStyle {
+  font-family: var(--font-primary);
+  /* display: none; */
+}
+
+@media only screen and (max-width: 500px) {
+  .headingStyle {
+    /* font-family: var(--font-primary); */
+    /* display: none; */
+    /* font-size: 80% !important; */
+  }
+}

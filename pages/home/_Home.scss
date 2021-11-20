@@ -1,0 +1,141 @@
+.i-am-home {
+  width: 100%;
+
+  .clr-white {
+    color: $clr-white;
+  }
+
+  .h-title-white {
+    position: relative;
+    color: $clr-white;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      height: 4px;
+      width: 150px;
+      background-color: $clr-white;
+    }
+  }
+
+  .h-title-black {
+    position: relative;
+    color: $clr-dark;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      height: 4px;
+      width: 150px;
+      background-color: $clr-dark;
+    }
+  }
+
+  .h-title-red {
+    position: relative;
+    color: $clr-dark;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      height: 4px;
+      width: 150px;
+      background-color: $theme-color;
+    }
+  }
+
+  .h-title {
+    margin: 10px;
+    position: relative;
+    font-size: $f-x-lg;
+  }
+  .h-desc {
+    margin: 20px 10px 20px 10px;
+  }
+  .h-group {
+    background-image: url("../../assets/images/sample/Map\ Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 80px;
+    .hero-section {
+      width: 100%;
+      margin-bottom: 100px;
+      display: flex;
+      align-items: center;
+      min-height: 500px;
+      background-image: url("../../assets//images/sample/hero-section.png");
+      background-size: 100% 110%;
+      background-position: 0 -100px;
+      background-repeat: no-repeat;
+
+      img {
+        width: 100%;
+      }
+    }
+    .delivery-details {
+      min-height: fit-content;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .delivery-system {
+    min-height: fit-content;
+    background-image: url("../../assets/images/sample/Bg-Object.png");
+    padding: 80px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .d-thumb {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      img {
+        flex: 1;
+        max-width: 450px;
+      }
+    }
+    .d-items {
+      width: 100%;
+      .d-inner-items {
+        width: 100%;
+        height: 250px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 10px #d4d4d4;
+        background-color: #fff;
+      }
+
+      > p {
+        font-size: $f-sm;
+      }
+    }
+  }
+  .mok-thumb {
+    width: 100%;
+  }
+
+  .bottom-section {
+    min-height: 600px;
+    padding: 80px 0 0 0;
+    background-image: url("../../assets/images/sample/mok-app-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+
+    .items {
+      width: 100%;
+      max-width: 500px;
+      padding: 10px;
+    }
+  }
+}

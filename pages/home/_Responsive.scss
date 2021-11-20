@@ -1,0 +1,44 @@
+@media screen and (max-width: 767px) {
+  .i-am-home {
+    .h-title {
+      margin: 10px;
+      position: relative;
+      font-size: $f-lg;
+    }
+    .delivery-details {
+      margin: 50px 0 0 0;
+    }
+    .hero-section {
+      .food-van {
+        margin: 50px 0 0 0;
+      }
+    }
+    .delivery-system {
+      padding: 50px 10px;
+      h1 {
+        font-size: $f-lg;
+      }
+      .d-thumb {
+        img {
+          flex: unset;
+          width: 100%;
+        }
+      }
+    }
+    .app-mok {
+      h1 {
+        font-size: $f-lg;
+      }
+    }
+    .bottom-section {
+      min-height: fit-content;
+      padding: 50px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .i-am-home .h-group .hero-section {
+    background-size: cover;
+  }
+}

@@ -1,0 +1,91 @@
+.slider {
+  width: 60vw;
+  height: 100vh;
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 40vw;
+  z-index: 16;
+  transform-origin: right;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 80fr;
+  display: none;
+}
+
+.cross-icon {
+  width: 15px;
+  height: 15px;
+  /* background: url("./../../assets/cross.png"); */
+  background-size: 100% 100%, cover;
+  cursor: pointer;
+}
+
+.slider-header {
+  /* padding: 2em; */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 25px;
+  color: $theme-color;
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+}
+
+.arrow-right {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+}
+
+.slider-header-logo {
+  /* background: limegreen; */
+}
+.slider-header-cross {
+  /* background: red; */
+}
+.slider-list {
+  display: grid;
+  align-content: flex-start;
+  /* row-gap: 0.8em; */
+}
+
+.slider-list-item {
+  padding: 2em;
+
+  a {
+    color: $theme-color;
+    transition: $transition-light;
+    text-decoration: none;
+
+    &:hover {
+      color: $clr-dark;
+    }
+  }
+}
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.4;
+  transition: opacity 200ms ease;
+  transform-origin: top right;
+  /* pointer-events */
+  display: none;
+}
+
+.active-link {
+  color: var(--primary-color-one) !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .slider {
+    display: block;
+  }
+  .backdrop {
+    display: block;
+  }
+}

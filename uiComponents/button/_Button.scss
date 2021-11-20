@@ -1,0 +1,68 @@
+.styled-btn {
+  border-radius: 30px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: $transition-light;
+}
+
+.styled-btn {
+  &.red {
+    background: $theme-gradient;
+    color: $clr-white;
+    &:focus {
+      box-shadow: 0 0 4px $theme-color;
+    }
+
+    &:hover {
+      box-shadow: 0 0 4px $theme-color;
+    }
+  }
+}
+
+.styled-btn {
+  &.default-clr {
+    background: $clr-white;
+    color: $clr-dark;
+    &:focus {
+      box-shadow: 0 0 4px $theme-color;
+    }
+
+    &:hover {
+      box-shadow: 0 0 4px $theme-color;
+    }
+  }
+}
+.styled-btn {
+  &.lg {
+    padding: 10px 40px;
+    font-size: $f-sm;
+  }
+}
+
+.styled-btn {
+  &.sm {
+    padding: 8px 25px;
+    font-size: $f-x-sm;
+  }
+}
+
+.styled-btn {
+  &.md {
+    padding: 8px 30px;
+    font-size: $f-sm;
+  }
+}
+.styled-btn {
+  &.light {
+    background: transparent;
+    color: $clr-dark;
+    padding: 6px 15px;
+
+    &:hover {
+      color: $theme-color;
+    }
+    &:focus {
+      color: $theme-color;
+    }
+  }
+}

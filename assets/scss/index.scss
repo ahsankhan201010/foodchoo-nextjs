@@ -1,15 +1,20 @@
-// // app variables imports
+// react boot strap
 
-// @import "variable";
+@import "~bootstrap/scss/bootstrap";
 
-// // global css import
+// app variables imports
 
-// @import "global";
+@import "variable";
 
-// // components imports
+// global css import
 
-// @import "../../uiComponents/uiComponents";
 
-// // pages imports
+@import "global";
 
-// @import "../../pages/pages";
+// components imports
+
+@import "../../uiComponents/uiComponents";
+
+// pages imports
+
+@import "../../pages/pages";
