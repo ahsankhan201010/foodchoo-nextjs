@@ -8,7 +8,7 @@ import rectAngleMokup from "../../assets/images/sample/Rectangle 7.png"
 import trackLocation  from "../../assets/images/icons/track-location.png"
 const Home = () => {
   return (
-    <div className="i-am-home">
+    <div className="i-am-home layout">
       <div className="h-group">
         <div className="hero-section">
           <div className="container">
