@@ -1,8 +1,11 @@
+html {
+  font-size: 62.5%;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: system-ui;
 }
 
 p,
@@ -12,14 +15,20 @@ h3 {
   margin: 0;
 }
 
+h1,
+h2,
+h3  {
+  font-family:$font-family-primary;
+}
+
 ::selection {
   background-color: $theme-color;
   color: $clr-white;
 }
 
-p {
-  line-height: 1.3;
-}
+// p {
+//   line-height: 1.3;
+// }
 
 li {
   list-style: none;

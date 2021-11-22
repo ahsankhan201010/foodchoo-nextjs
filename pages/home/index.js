@@ -2,10 +2,13 @@
 import Button from "../../uiComponents/button/Button";
 import Fade from "react-reveal/Fade";
 import Section01 from "../../assets/images/sample/Section-01.png"
+import Paragraph from "../../uiComponents/paragraph/Paragraph"
 import Device_Mokup from "../../assets/images/sample/Metal_Device_Mockup.png"
 import foodPack from "../../assets/images/icons/food-pack.png"
 import rectAngleMokup from "../../assets/images/sample/Rectangle 7.png"
 import trackLocation  from "../../assets/images/icons/track-location.png"
+import mokApp from "../../assets/images/sample/mok-app.png"
+
 const Home = () => {
   return (
     <div className="i-am-home layout">
@@ -20,7 +23,7 @@ const Home = () => {
                   </h1>
                 </Fade>
                 <Fade duration={1500} delay={2000}>
-                  <p className="h-desc clr-white">
+                  <Paragraph color={"#fff"}>
                     Hungry but tired? Need an ingredient but busy with
                     something? Our Food Delivery system is here to help you with
                     last-minute recipe ingredients and food. Simply choose the
@@ -28,10 +31,10 @@ const Home = () => {
                     our self-sufficient delivery management system take it from
                     there. Enjoy food and grocery at your doorsteps with minimum
                     delivery charges.
-                  </p>
+                  </Paragraph>
                 </Fade>
                 <Fade bottom delay={1500}>
-                  <Button>Get Started</Button>
+                  <Button className="h-btn">Get Started</Button>
                 </Fade>
               </div>
               <div className="col-lg-7 food-van">
@@ -62,7 +65,7 @@ const Home = () => {
                 <h1 className="h-title h-title-red my-3">
                   A complete food and grocery delivery system
                 </h1>
-                <p className="h-desc my-3">
+                <Paragraph className="h-desc my-3">
                   Hungry but tired? Need an ingredient but busy with something?
                   Our Food Delivery system is here to help you with last-minute
                   recipe ingredients and food. Simply choose the desired
@@ -70,8 +73,8 @@ const Home = () => {
                   self-sufficient delivery management system take it from there.
                   Enjoy food and grocery at your doorsteps with minimum delivery
                   charges.
-                </p>
-                <Button red>Get Started</Button>
+                </Paragraph>
+                <Button className="h-btn" red>Get Started</Button>
               </Fade>
             </div>
           </div>
@@ -99,12 +102,12 @@ const Home = () => {
                     />
                     <h3 className="mt-3">Grocery</h3>
                   </div>
-                  <p className="text-center mt-3">
+                  <Paragraph className="text-center mt-3">
                     Hungry but tired? Need an ingredient but busy with
                     something? Our Food Delivery system is here to help you with
                     last-minute recipe ingredients and food. Simply choose the
                     desired restaurant or grocery store, place
-                  </p>
+                  </Paragraph>
                 </div>
               </Fade>
             </div>
@@ -132,12 +135,12 @@ const Home = () => {
                     />
                     <h3 className="mt-3">Delivery</h3>
                   </div>
-                  <p className="text-center mt-3">
+                  <Paragraph className="text-center mt-3">
                     Hungry but tired? Need an ingredient but busy with
                     something? Our Food Delivery system is here to help you with
                     last-minute recipe ingredients and food. Simply choose the
                     desired restaurant or grocery store, place
-                  </p>
+                  </Paragraph>
                 </div>
               </Fade>
             </div>
@@ -146,7 +149,7 @@ const Home = () => {
       </div>
       <div className="container app-mok">
         <Fade duration={2000} top>
-          <h1 className="text-center mb-5">
+          <h1 className="text-center my-5">
             A complete food and grocery delivery system
           </h1>
         </Fade>
@@ -154,7 +157,7 @@ const Home = () => {
         <Fade top>
           <img
             className="mok-thumb"
-            src={require("../../assets/images/sample/mok-app.png").default}
+            src={mokApp.src}
             alt=""
           />
         </Fade>
@@ -165,15 +168,15 @@ const Home = () => {
             <h1 className="h-title h-title-black">
               A complete food and grocery delivery system
             </h1>
-            <p className="h-desc">
+            <Paragraph className="h-desc">
               Hungry but tired? Need an ingredient but busy with something? Our
               Food Delivery system is here to help you with last-minute recipe
               ingredients and food. Simply choose the desired restaurant or
               grocery store, place the order and let our self-sufficient
               delivery management system take it from there. Enjoy food and
               grocery at your doorsteps with minimum delivery charges.
-            </p>
-            <Button red>Get Started</Button>
+            </Paragraph>
+            <Button className="h-btn" red>Get Started</Button>
           </div>
         </Fade>
       </div>

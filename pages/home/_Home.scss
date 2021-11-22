@@ -14,7 +14,7 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: -10px;
+      bottom: 0px;
       height: 4px;
       width: 150px;
       background-color: $clr-white;
@@ -29,7 +29,7 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: -10px;
+      bottom: 0px;
       height: 4px;
       width: 150px;
       background-color: $clr-dark;
@@ -44,7 +44,7 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: -10px;
+      bottom: 0px;
       height: 4px;
       width: 150px;
       background-color: $theme-color;
@@ -52,12 +52,17 @@
   }
 
   .h-title {
-    margin: 10px;
+    margin: 0 0 18px 0 !important;
+    padding:0 0 10px 0;
     position: relative;
     font-size: $f-x-lg;
   }
   .h-desc {
     margin: 20px 10px 20px 10px;
+  }
+
+  .h-btn {
+    margin:8px 0 0 0;
   }
   .h-group {
     background-image: url("../../assets/images/sample/Map\ Background.png");
@@ -71,8 +76,8 @@
       align-items: center;
       min-height: 500px;
       background-image: url("../../assets//images/sample/hero-section.png");
-      background-size: 100% 110%;
-      background-position: 0 -100px;
+      background-size: 100% 100%;
+      background-position: center;
       background-repeat: no-repeat;
 
       img {
