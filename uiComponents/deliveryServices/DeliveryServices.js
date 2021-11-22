@@ -10,17 +10,17 @@ import trackLocation from "../../assets/images/icons/track-location.png";
 const DeliveryServices = () => {
   const wrapper = useRef(null);
 
-  useEffect(() => {
-    const onScroll = () => {
-      //   console.log(window.scrollY);
-      var bounding = wrapper.current.getBoundingClientRect();
-      console.log(window.innerHeight - bounding.top);
-    };
-    window.addEventListener("scroll", onScroll);
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const onScroll = () => {
+  //     //   console.log(window.scrollY);
+  //     var bounding = wrapper.current.getBoundingClientRect();
+  //     console.log(window.innerHeight - bounding.top);
+  //   };
+  //   window.addEventListener("scroll", onScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", onScroll);
+  //   };
+  // }, []);
 
   return (
     <div ref={wrapper} className="delivery-system">
