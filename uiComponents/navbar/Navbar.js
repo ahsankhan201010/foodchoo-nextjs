@@ -7,7 +7,7 @@ import Header from "../header/Header";
 import Slider from "../slider/Slider";
 import { HiMenu } from "react-icons/hi";
 import Button from "../button/Button";
-import Logo from "../../assets/images/logo/logo_red.svg"
+import Logo from "../../assets/images/logo/logo_red.svg";
 
 var options = [
   {
@@ -38,10 +38,10 @@ const NavItem = ({ children, path }) => {
       //       : "1px solid transparent",
       // }}
       className="navItem">
-      <a to={path}>
+      <a href={path}>
         <Header
           //   color={pathname === path ? "var(--primary-color-one)" : "black"}
-          fontSize={17}
+          fontSize={24}
           fontWeight="medium">
           {children}
         </Header>
@@ -73,11 +73,7 @@ const Navbar = () => {
       className="navbar">
       <Slider navbar={navbar} setNavbar={setNavbar} />
       <div style={{ alignItems: "flex-start" }} className="logoArea center">
-        <img
-          className="logo"
-          src={Logo.src}
-          style={{ objectFit: "fill" }}
-        />
+        <img className="logo" src={Logo.src} style={{ objectFit: "fill" }} />
       </div>
       <div className="menuItemArea">
         <div className="navSimpleItems">

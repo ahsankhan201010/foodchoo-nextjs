@@ -17,11 +17,9 @@ const Backdrop = ({ navbar, setNavbar }) => (
 
 const SliderListItem = ({ children, to, setNavbar, exact }) => (
   <div className="slider-list-item">
-    <Header onClick={() => setNavbar(false)} fontWeight="medium" fontSize={18}>
+    <Header onClick={() => setNavbar(false)} fontWeight="medium" fontSize={24}>
       <a to={to} exact activeClassName="active-link">
-        
-          {children}
-       
+        {children}
       </a>
     </Header>
   </div>

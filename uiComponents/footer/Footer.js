@@ -1,5 +1,9 @@
 import React from "react";
-import Logo from "../../assets/images/logo/logo_red.svg"
+import Logo from "../../assets/images/logo/logo_red.svg";
+import Paragraph from "../paragraph/Paragraph";
+import FB from "../../assets/images/icons/fb.png";
+import insta from "../../assets/images/icons/insta.png";
+import linkedin from "../../assets/images/icons/linkedin.png";
 
 const Footer = () => {
   return (
@@ -8,17 +12,13 @@ const Footer = () => {
         <div className="container footer-items-wrapper">
           <div className="row footer-row">
             <div className="col-lg-6">
-              <img
-                className="mb-3"
-                src={Logo.src}
-                alt="logo"
-              />
-              <p className="footer-desc">
+              <img className="mb-3" src={Logo.src} alt="logo" />
+              <Paragraph customClass="footer-desc">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
                 dignissimos recusandae porro eligendi neque, maiores enim
                 dolorem tempore voluptates consectetur facilis eos esse quis id?
                 In nostrum et quo quisquam.
-              </p>
+              </Paragraph>
             </div>
             <div className="col-lg-3">
               <ul className="footer-links">
@@ -44,6 +44,17 @@ const Footer = () => {
                 <li>
                   <a href="mailto:someone@example.com">
                     Email: example@gmail.com
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img className="mr-2" src={insta.src} alt="instagram" />
+                  </a>
+                  <a href="#">
+                    <img className="mr-2" src={FB.src} alt="facebook" />
+                  </a>
+                  <a href="#">
+                    <img className="mr-2" src={linkedin.src} alt="linkedin" />
                   </a>
                 </li>
               </ul>

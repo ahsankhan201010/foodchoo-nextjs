@@ -1,0 +1,53 @@
+.food-menu {
+  .f-menu-items {
+    padding: 10px 0;
+
+    .f-menu-title {
+      color: #fff;
+      text-align: center;
+      margin: 20px 0;
+    }
+    .f-menu-row {
+      height: 100%;
+      max-height: 150px;
+      overflow-y: auto;
+      align-items: center;
+      padding: 10px;
+      margin: 10px;
+    }
+    .f-menu-row::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    .f-menu-row::-webkit-scrollbar-track {
+      background-color: $theme-color;
+    }
+
+    .f-menu-row::-webkit-scrollbar-thumb {
+      border-radius: 2px;
+      background-color: $clr-white;
+    }
+
+    .f-menu-btn {
+      height: 40px;
+      width: 100%;
+      border-radius: 30px;
+      background-color: transparent;
+      color: $clr-white;
+      border: solid 2px $clr-white;
+      font-size: $f-sm;
+      transition: $transition-light;
+    }
+
+    .selectedBtn {
+      background-color: $clr-white;
+      color: $clr-dark;
+    }
+
+    .f-menu-selection {
+      margin: 20px 0;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

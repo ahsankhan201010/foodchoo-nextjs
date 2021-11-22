@@ -1,14 +1,20 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .i-am-home {
+    .h-group {
+      background-size: cover;
+    }
     .h-title {
       margin: 10px;
       position: relative;
       font-size: $f-lg;
     }
     .delivery-details {
-      margin: 50px 0 0 0;
+      img {
+        margin: 0 0 20px 0;
+      }
     }
     .hero-section {
+      padding: 50px 0 0 0;
       .food-van {
         margin: 50px 0 0 0;
       }
@@ -22,7 +28,12 @@
         img {
           flex: unset;
           width: 100%;
+          margin: 20px 0;
         }
+      }
+
+      .clr-white {
+        color: $clr-white !important;
       }
     }
     .app-mok {
@@ -32,7 +43,8 @@
     }
     .bottom-section {
       min-height: fit-content;
-      padding: 50px 0;
+      padding: 0px 0;
+      background-image: unset;
     }
   }
 }

@@ -1,7 +1,6 @@
 .i-am-home {
   width: 100%;
-
-
+  overflow: hidden;
   .clr-white {
     color: $clr-white;
   }
@@ -39,7 +38,6 @@
   .h-title-red {
     position: relative;
     color: $clr-dark;
-
     &::after {
       content: "";
       position: absolute;
@@ -53,7 +51,7 @@
 
   .h-title {
     margin: 0 0 18px 0 !important;
-    padding:0 0 10px 0;
+    padding: 0 0 10px 0;
     position: relative;
     font-size: $f-x-lg;
   }
@@ -62,16 +60,17 @@
   }
 
   .h-btn {
-    margin:8px 0 0 0;
+    margin: 8px 0 0 0;
   }
   .h-group {
     background-image: url("../../assets/images/sample/Map\ Background.png");
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     padding-bottom: 80px;
+    position: relative;
+    transition: $transition-light;
     .hero-section {
       width: 100%;
-      margin-bottom: 100px;
       display: flex;
       align-items: center;
       min-height: 500px;
@@ -79,10 +78,19 @@
       background-size: 100% 100%;
       background-position: center;
       background-repeat: no-repeat;
+      position: relative;
+      z-index: 10;
 
       img {
         width: 100%;
       }
+    }
+
+    .food-menu-wrapper {
+      margin: 80px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .delivery-details {
       min-height: fit-content;
@@ -90,6 +98,10 @@
         width: 100%;
       }
     }
+  }
+
+  .scal-home-bg {
+    background-size: 110% 110%;
   }
   .delivery-system {
     min-height: fit-content;
@@ -137,11 +149,25 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
+    transition: $transition-high;
 
     .items {
       width: 100%;
       max-width: 500px;
       padding: 10px;
     }
+  }
+
+  .food-menu-modal {
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    transform: translateY(100%);
+    background-color: $theme-color;
+    width: 100%;
+    transition: $transition-light;
+  }
+  .open-food-menu {
+    transform: translateY(0);
   }
 }

@@ -1,18 +1,46 @@
-
+import { useState } from "react";
 import Button from "../../uiComponents/button/Button";
 import Fade from "react-reveal/Fade";
-import Section01 from "../../assets/images/sample/Section-01.png"
-import Paragraph from "../../uiComponents/paragraph/Paragraph"
-import Device_Mokup from "../../assets/images/sample/Metal_Device_Mockup.png"
-import foodPack from "../../assets/images/icons/food-pack.png"
-import rectAngleMokup from "../../assets/images/sample/Rectangle 7.png"
-import trackLocation  from "../../assets/images/icons/track-location.png"
-import mokApp from "../../assets/images/sample/mok-app.png"
+import Section01 from "../../assets/images/sample/Section-01.png";
+import Paragraph from "../../uiComponents/paragraph/Paragraph";
+import Device_Mokup from "../../assets/images/sample/Metal_Device_Mockup.png";
+import mokApp from "../../assets/images/sample/mok-app.png";
+import LocationMarker from "../../uiComponents/locationMarker/LocationMarker";
+import johnDoeIcon from "../../assets/images/icons/location-icon.png";
+import FoodMenu from "../../uiComponents/foodMenu/FoodMenu";
+import DeliveryServices from "../../uiComponents/deliveryServices/DeliveryServices";
 
 const Home = () => {
+  const [foodMenuModal, setFoodMenuModal] = useState(false);
   return (
     <div className="i-am-home layout">
-      <div className="h-group">
+      <div className={`h-group ${foodMenuModal && "scal-home-bg"}`}>
+        <LocationMarker
+          image={johnDoeIcon}
+          top={foodMenuModal ? "650px" : "550px"}
+          left={foodMenuModal ? "2%" : "4%"}
+        />
+
+        <LocationMarker
+          image={johnDoeIcon}
+          bottom={foodMenuModal ? "100px" : "30px"}
+          left={foodMenuModal ? "1.5%" : "3%"}
+        />
+        <LocationMarker
+          image={johnDoeIcon}
+          top={foodMenuModal ? "350px" : "450px"}
+          right={foodMenuModal ? "15%" : "25%"}
+        />
+        <LocationMarker
+          image={johnDoeIcon}
+          bottom={foodMenuModal ? "400px" : "300px"}
+          right={foodMenuModal ? "4%" : "8%"}
+        />
+        <LocationMarker
+          image={johnDoeIcon}
+          bottom={foodMenuModal ? "100px" : "50px"}
+          right={foodMenuModal ? "6%" : "12%"}
+        />
         <div className="hero-section">
           <div className="container">
             <div className="row">
@@ -38,26 +66,21 @@ const Home = () => {
                 </Fade>
               </div>
               <div className="col-lg-7 food-van">
-                <img
-                  src={
-                    Section01.src
-                  }
-                  alt="van"
-                />
+                <img src={Section01.src} alt="van" />
               </div>
             </div>
           </div>
+        </div>
+        <div className="container food-menu-wrapper">
+          <Button onClick={() => setFoodMenuModal(true)} className="m-auto" red>
+            I AM HUNGRY
+          </Button>
         </div>
         <div className="delivery-details container">
           <div className="row">
             <div className="col-lg-6">
               <Fade left>
-                <img
-                  src={
-                    Device_Mokup.src
-                  }
-                  alt=""
-                />
+                <img src={Device_Mokup.src} alt="" />
               </Fade>
             </div>
             <div className="col-lg-6">
@@ -74,78 +97,16 @@ const Home = () => {
                   Enjoy food and grocery at your doorsteps with minimum delivery
                   charges.
                 </Paragraph>
-                <Button className="h-btn" red>Get Started</Button>
+                <Button className="h-btn" red>
+                  Get Started
+                </Button>
               </Fade>
             </div>
           </div>
         </div>
       </div>
-      <div className="delivery-system">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <Fade duration={2000} top>
-                <h1 className="text-center mb-5">
-                  A complete food and grocery delivery system
-                </h1>
-              </Fade>
-            </div>
-            <div className="col-lg-3 p-0">
-              <Fade top>
-                <div className="d-items">
-                  <div className="d-inner-items">
-                    <img
-                      src={
-                        foodPack.src
-                      }
-                      alt=""
-                    />
-                    <h3 className="mt-3">Grocery</h3>
-                  </div>
-                  <Paragraph className="text-center mt-3">
-                    Hungry but tired? Need an ingredient but busy with
-                    something? Our Food Delivery system is here to help you with
-                    last-minute recipe ingredients and food. Simply choose the
-                    desired restaurant or grocery store, place
-                  </Paragraph>
-                </div>
-              </Fade>
-            </div>
-            <div className="col-lg-6">
-              <Fade delay={500} bottom>
-                <div className="d-thumb">
-                  <img
-                    src={
-                      rectAngleMokup.src
-                    }
-                    alt=""
-                  />
-                </div>
-              </Fade>
-            </div>
-            <div className="col-lg-3 p-0">
-              <Fade top>
-                <div className="d-items">
-                  <div className="d-inner-items">
-                    <img
-                      src={
-                        trackLocation.src
-                      }
-                      alt=""
-                    />
-                    <h3 className="mt-3">Delivery</h3>
-                  </div>
-                  <Paragraph className="text-center mt-3">
-                    Hungry but tired? Need an ingredient but busy with
-                    something? Our Food Delivery system is here to help you with
-                    last-minute recipe ingredients and food. Simply choose the
-                    desired restaurant or grocery store, place
-                  </Paragraph>
-                </div>
-              </Fade>
-            </div>
-          </div>
-        </div>
+      <div>
+        <DeliveryServices />
       </div>
       <div className="container app-mok">
         <Fade duration={2000} top>
@@ -155,11 +116,7 @@ const Home = () => {
         </Fade>
 
         <Fade top>
-          <img
-            className="mok-thumb"
-            src={mokApp.src}
-            alt=""
-          />
+          <img className="mok-thumb" src={mokApp.src} alt="" />
         </Fade>
       </div>
       <div className="container bottom-section my-5">
@@ -176,9 +133,17 @@ const Home = () => {
               delivery management system take it from there. Enjoy food and
               grocery at your doorsteps with minimum delivery charges.
             </Paragraph>
-            <Button className="h-btn" red>Get Started</Button>
+            <Button className="h-btn" red>
+              Get Started
+            </Button>
           </div>
         </Fade>
+      </div>
+      <div
+        className={`food-menu-modal ${
+          (foodMenuModal && "open-food-menu") || ""
+        }`}>
+        <FoodMenu onHide={() => setFoodMenuModal(false)} />
       </div>
     </div>
   );
