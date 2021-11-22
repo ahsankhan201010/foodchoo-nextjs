@@ -1,17 +1,17 @@
 import { useState } from "react";
-import Button from "../../uiComponents/button/Button";
+import Button from "../uiComponents/button/Button";
 import Fade from "react-reveal/Fade";
-import Section01 from "../../assets/images/sample/Section-01.png";
-import Paragraph from "../../uiComponents/paragraph/Paragraph";
-import Device_Mokup from "../../assets/images/sample/Metal_Device_Mockup.png";
-import mokApp from "../../assets/images/sample/mok-app.png";
-import LocationMarker from "../../uiComponents/locationMarker/LocationMarker";
-import johnDoeIcon from "../../assets/images/icons/location-icon.png";
-import FoodMenu from "../../uiComponents/foodMenu/FoodMenu";
-import DeliveryServices from "../../uiComponents/deliveryServices/DeliveryServices";
-import heroBg from "../../assets/images/sample/hero-section.png";
-import mapBg from "../../assets/images/sample/map-background.png";
-import mokAppBg from "../../assets/images/sample/mok-app-bg.png";
+import Section01 from "../assets/images/sample/Section-01.png";
+import Paragraph from "../uiComponents/paragraph/Paragraph";
+import Device_Mokup from "../assets/images/sample/Metal_Device_Mockup.png";
+import mokApp from "../assets/images/sample/mok-app.png";
+import LocationMarker from "../uiComponents/locationMarker/LocationMarker";
+import johnDoeIcon from "../assets/images/icons/location-icon.png";
+import FoodMenu from "../uiComponents/foodMenu/FoodMenu";
+import DeliveryServices from "../uiComponents/deliveryServices/DeliveryServices";
+import heroBg from "../assets/images/sample/hero-section.png";
+import mapBg from "../assets/images/sample/map-background.png";
+import mokAppBg from "../assets/images/sample/mok-app-bg.png";
 
 const Home = () => {
   const [foodMenuModal, setFoodMenuModal] = useState(false);
