@@ -2,10 +2,10 @@ import { useRef, useEffect } from "react";
 
 import Fade from "react-reveal/Fade";
 import Paragraph from "../../uiComponents/paragraph/Paragraph";
-
 import foodPack from "../../assets/images/icons/food-pack.png";
 import rectAngleMokup from "../../assets/images/sample/Rectangle 7.png";
 import trackLocation from "../../assets/images/icons/track-location.png";
+import bgObject from "../../assets/images/sample/Bg-Object.png";
 
 const DeliveryServices = () => {
   const wrapper = useRef(null);
@@ -23,7 +23,10 @@ const DeliveryServices = () => {
   }, []);
 
   return (
-    <div ref={wrapper} className="delivery-system">
+    <div
+      style={{ backgroundImage: `url(${bgObject.src})` }}
+      ref={wrapper}
+      className="delivery-system">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

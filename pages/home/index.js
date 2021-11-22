@@ -9,12 +9,17 @@ import LocationMarker from "../../uiComponents/locationMarker/LocationMarker";
 import johnDoeIcon from "../../assets/images/icons/location-icon.png";
 import FoodMenu from "../../uiComponents/foodMenu/FoodMenu";
 import DeliveryServices from "../../uiComponents/deliveryServices/DeliveryServices";
+import heroBg from "../../assets/images/sample/hero-section.png";
+import mapBg from "../../assets/images/sample/map-background.png";
+import mokAppBg from "../../assets/images/sample/mok-app-bg.png";
 
 const Home = () => {
   const [foodMenuModal, setFoodMenuModal] = useState(false);
   return (
     <div className="i-am-home layout">
-      <div className={`h-group ${foodMenuModal && "scal-home-bg"}`}>
+      <div
+        style={{ backgroundImage: `url(${mapBg.src})` }}
+        className={`h-group ${foodMenuModal && "scal-home-bg"}`}>
         <LocationMarker
           image={johnDoeIcon}
           top={foodMenuModal ? "650px" : "550px"}
@@ -41,7 +46,9 @@ const Home = () => {
           bottom={foodMenuModal ? "100px" : "50px"}
           right={foodMenuModal ? "6%" : "12%"}
         />
-        <div className="hero-section">
+        <div
+          style={{ backgroundImage: `url(${heroBg.src})` }}
+          className="hero-section">
           <div className="container">
             <div className="row">
               <div className="col-lg-5">
@@ -119,7 +126,9 @@ const Home = () => {
           <img className="mok-thumb" src={mokApp.src} alt="" />
         </Fade>
       </div>
-      <div className="container bottom-section my-5">
+      <div
+        style={{ backgroundImage: `url(${mokAppBg.src})` }}
+        className="container bottom-section my-5">
         <Fade left>
           <div className="items">
             <h1 className="h-title h-title-black">
