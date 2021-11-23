@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Button from "../uiComponents/button/Button";
 import Fade from "react-reveal/Fade";
 import Section01 from "../assets/images/sample/Section-01.png";
@@ -15,11 +15,27 @@ import mokAppBg from "../assets/images/sample/mok-app-bg.png";
 
 const Home = () => {
   const [foodMenuModal, setFoodMenuModal] = useState(false);
+  const [cuisines, setCuisines] = useState([]);
+  useEffect(() => {
+    const fn = async () => {
+      try {
+        const res = await fetch(
+          "https://api.foodchoo.com/api/v1/establishments/cuisines"
+        );
+        const {data: {cuisine}} = await res.json();
+        setCuisines(cuisine);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fn();
+  }, []);
   return (
     <div className="i-am-home layout">
       <div
         style={{ backgroundImage: `url(${mapBg.src})` }}
-        className={`h-group ${foodMenuModal && "scal-home-bg"}`}>
+        className={`h-group ${foodMenuModal && "scal-home-bg"}`}
+      >
         <LocationMarker
           image={johnDoeIcon}
           top={foodMenuModal ? "650px" : "550px"}
@@ -48,7 +64,8 @@ const Home = () => {
         />
         <div
           style={{ backgroundImage: `url(${heroBg.src})` }}
-          className="hero-section">
+          className="hero-section"
+        >
           <div className="container">
             <div className="row">
               <div className="col-lg-5">
@@ -128,7 +145,8 @@ const Home = () => {
       </div>
       <div
         style={{ backgroundImage: `url(${mokAppBg.src})` }}
-        className="container bottom-section my-5">
+        className="container bottom-section my-5"
+      >
         <Fade left>
           <div className="items">
             <h1 className="theme-title theme-title-black">
@@ -151,8 +169,9 @@ const Home = () => {
       <div
         className={`food-menu-modal ${
           (foodMenuModal && "open-food-menu") || ""
-        }`}>
-        <FoodMenu onHide={() => setFoodMenuModal(false)} />
+        }`}
+      >
+        <FoodMenu cuisines={cuisines} onHide={() => setFoodMenuModal(false)} />
       </div>
     </div>
   );
