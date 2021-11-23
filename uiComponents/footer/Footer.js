@@ -4,6 +4,7 @@ import Paragraph from "../paragraph/Paragraph";
 import FB from "../../assets/images/icons/fb.png";
 import insta from "../../assets/images/icons/insta.png";
 import linkedin from "../../assets/images/icons/linkedin.png";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -14,10 +15,12 @@ const Footer = () => {
             <div className="col-lg-6">
               <img className="mb-3" src={Logo.src} alt="logo" />
               <Paragraph customClass="footer-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                dignissimos recusandae porro eligendi neque, maiores enim
-                dolorem tempore voluptates consectetur facilis eos esse quis id?
-                In nostrum et quo quisquam.
+                The FoodChoo OnDemand! Now! Food delivery platform will be
+                available to every small restaurant that wants to use it. Our
+                platform is designed to help restaurants sell more food in less
+                time in the most ethical way possible. We believe in
+                transparency and we believe that restaurants are a great small
+                business.
               </Paragraph>
             </div>
             <div className="col-lg-3">
@@ -26,10 +29,13 @@ const Footer = () => {
                   <h3 className="footer-title">Useful Links</h3>
                 </li>
                 <li>
-                  <a href="">FAQ</a>
+                  <Link href="/faq">FAQ</Link>
                 </li>
                 <li>
-                  <a href="">Terms & Conditions</a>
+                  <Link href="/restaurant">Restaurant</Link>
+                </li>
+                <li>
+                  <Link href="/customer">Customer</Link>
                 </li>
               </ul>
             </div>
@@ -48,13 +54,13 @@ const Footer = () => {
                 </li>
                 <li>
                   <a href="#">
-                    <img className="mr-2" src={insta.src} alt="instagram" />
+                    <img className="mr-4" src={insta.src} alt="instagram" />
                   </a>
                   <a href="#">
-                    <img className="mr-2" src={FB.src} alt="facebook" />
+                    <img className="mr-4" src={FB.src} alt="facebook" />
                   </a>
                   <a href="#">
-                    <img className="mr-2" src={linkedin.src} alt="linkedin" />
+                    <img className="mr-4" src={linkedin.src} alt="linkedin" />
                   </a>
                 </li>
               </ul>

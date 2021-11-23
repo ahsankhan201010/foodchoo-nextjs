@@ -1,4 +1,4 @@
-import restaurantFC from "./../../assets/images/icons/restaurantFC.png";
+import customerFC from "./../../assets/images/icons/customerFC.png";
 import DownloadActions from "../../uiComponents/downloadActions/DownloadActions";
 import DetailedDescription from "../../uiComponents/DetailedDescription/DetailedDescription";
 
@@ -15,7 +15,7 @@ const Customer = () => {
         <DetailedDescription
           description={content}
           heading={"CUSTOMER"}
-          bannerImage={restaurantFC}
+          bannerImage={customerFC}
         />
         <DownloadActions />
       </div>

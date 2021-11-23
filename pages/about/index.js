@@ -14,12 +14,12 @@ const About = () => {
         <div className="row row-gap-b">
           <div className="grid-gap col-lg-6 grid-align direction-column">
             <div>
-              <Fade duration={2000} delay={200} top>
-                <h1 className="theme-title theme-title-max theme-title-black">
+              <Fade cascade duration={1000} delay={200} top>
+                <h1 className="theme-title theme-title-max theme-title-red">
                   Years Ago
                 </h1>
               </Fade>
-              <Fade duration={1500} delay={1500}>
+              <Fade duration={1000} delay={500}>
                 <Paragraph>
                   the founders of FoodChoo realized that restaurant food
                   delivery had several problems which prevented food delivery
@@ -35,7 +35,7 @@ const About = () => {
               </Fade>
             </div>
             <div>
-              <Fade bottom delay={1500}>
+              <Fade bottom delay={1000}>
                 <img className="mx-2" src={appStoreIcon.src} alt="" />
                 <img className="mx-2" src={playStore.src} alt="" />
               </Fade>
@@ -56,7 +56,7 @@ const About = () => {
           <div className="grid-gap col-lg-6 direction-column min-height">
             <div>
               <Fade top>
-                <h1 className="theme-title theme-title-max theme-title-black">
+                <h1 className="theme-title theme-title-max theme-title-red">
                   The FoodChoo, <br /> OnDemand! Now
                 </h1>
               </Fade>

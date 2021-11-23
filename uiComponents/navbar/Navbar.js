@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
 import { NavLink } from "./../navLink/NavLink";
 import Slider from "../slider/Slider";
 import { HiMenu } from "react-icons/hi";
@@ -70,14 +69,14 @@ const Navbar = () => {
           </NavLink>
         </div>
       </div>
-      <div className="nav-btns">
+      {/* <div className="nav-btns">
         <Button className="login-btn" light md>
           Login
         </Button>
         <Button red md>
           Sign up
         </Button>
-      </div>
+      </div> */}
       <HiMenu onClick={() => setNavbar(true)} className="ham" />
     </div>
   );
