@@ -1,12 +1,16 @@
 import Paragraph from "./../../uiComponents/paragraph/Paragraph";
 import restaurantFC from "./../../assets/images/icons/restaurantFC.png";
+import appStoreIcon from "../../assets/images/icons/app-store.png";
+import playStore from "../../assets/images/icons/playstore.png";
+import DownloadActions from "../../uiComponents/downloadBtns/DownloadActions";
+
 const PioneerProgram = () => {
     return (
         <div className="i-am-pioneer-program layout">
             <div className="container">
-                <div className="row">
+                <div className="row res-btn-gap-y">
                     <div className="col-lg-6">
-                        <h1 className="theme-title theme-title-black">RESTAURANT</h1>
+                        <h1 className="theme-title theme-title-red theme-title-max">RESTAURANT</h1>
                         <Paragraph>
                             FoodChoo created the world’s first On Demand! Now! Food Delivery Platform with the goal to help small
                             restaurants deliver more food to more people in the shortest amount of time possible. The FoodChoo universe
@@ -24,13 +28,9 @@ const PioneerProgram = () => {
                     <div className="col-lg-6 FC-image-wrapper">
                         <img src={restaurantFC.src} alt="Restaurant Food Choo" />
                     </div>
-                    <div className="col-lg-12">
-                        <h1 className="theme-title theme-title-red">DOWNLOAD THE APP NOW</h1>
-                        <Paragraph color={"#fff"}>
-                            Hungry but tired? Need an ingredient but busy with something? Our Food Delivery system is here to help you with
-                            last-minute recipe ingredients and food.
-                        </Paragraph>
-                    </div>
+                </div>
+                <div className="row download-btn-gap-y">
+                    <DownloadActions />
                 </div>
             </div>
         </div>
