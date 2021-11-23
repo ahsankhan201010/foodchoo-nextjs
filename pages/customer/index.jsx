@@ -1,6 +1,7 @@
 import customerFC from "./../../assets/images/icons/customerFC.png";
 import DownloadActions from "../../uiComponents/downloadActions/DownloadActions";
 import DetailedDescription from "../../uiComponents/DetailedDescription/DetailedDescription";
+import BackDrop from "../../uiComponents/backDrop/BackDrop";
 
 const Customer = () => {
   const content = [
@@ -11,6 +12,8 @@ const Customer = () => {
   ];
   return (
     <div className="i-am-customer layout-gap layout">
+      <BackDrop leftDrop left="0" top="30%" />
+      <BackDrop rightDrop bottom="0" />
       <div className="container">
         <DetailedDescription
           description={content}

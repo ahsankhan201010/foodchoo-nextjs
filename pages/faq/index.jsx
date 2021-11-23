@@ -1,9 +1,8 @@
 import React from "react";
 import { Collapse } from "antd";
 import Fade from "react-reveal/Fade";
-
+import BackDrop from "../../uiComponents/backDrop/BackDrop";
 import DownloadActions from "../../uiComponents/downloadActions/DownloadActions";
-
 const { Panel } = Collapse;
 
 const text = `
@@ -15,6 +14,8 @@ const text = `
 const faq = () => {
   return (
     <div className="layout layout-gap i-am-faq">
+      <BackDrop leftDrop left="0" top="0" />
+      <BackDrop rightDrop bottom="0" />
       <div className="container">
         <div className="row">
           <div className="col-lg-12 d-flex justify-content-center ">
