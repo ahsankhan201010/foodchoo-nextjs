@@ -3,10 +3,13 @@ import { Input, Form } from "antd";
 import Button from "../../uiComponents/button/Button";
 import DownloadActions from "../../uiComponents/downloadActions/DownloadActions";
 import Fade from "react-reveal/Fade";
+import BackDrop from "../../uiComponents/backDrop/BackDrop";
 
 const Contact = () => {
   return (
     <div className="layout layout-gap i-am-contact">
+      <BackDrop leftDrop left="0" top="0" />
+      <BackDrop rightDrop bottom="0" />
       <div className="container">
         <div className="row">
           <div className="col-lg-12 d-flex justify-content-center ">

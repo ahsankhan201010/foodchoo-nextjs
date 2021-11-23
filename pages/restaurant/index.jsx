@@ -1,6 +1,7 @@
 import restaurantFC from "./../../assets/images/icons/restaurantFC.png";
 import DownloadActions from "../../uiComponents/downloadActions/DownloadActions";
 import DetailedDescription from "../../uiComponents/DetailedDescription/DetailedDescription";
+import BackDrop from "../../uiComponents/backDrop/BackDrop";
 
 const Restaurant = () => {
   const content = [
@@ -11,6 +12,8 @@ const Restaurant = () => {
   ];
   return (
     <div className="i-am-pioneer-program layout-gap layout">
+      <BackDrop leftDrop left="0" top="0%" />
+      <BackDrop rightDrop bottom="20%" />
       <div className="container">
         <DetailedDescription
           description={content}

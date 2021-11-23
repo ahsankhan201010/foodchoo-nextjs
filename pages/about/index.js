@@ -6,10 +6,13 @@ import appImage from "../../assets/images/sample/app-mobile.png";
 import bgObject from "../../assets/images/sample/Rectangle-about-bg.png";
 import burgerImg from "../../assets/images/sample/cheeseburger-with-french-fries.png";
 import Fade from "react-reveal/Fade";
+import BackDrop from "../../uiComponents/backDrop/BackDrop";
 
 const About = () => {
   return (
     <div className="i-am-about layout layout-gap">
+      <BackDrop leftDrop left="0" top="10%" />
+      <BackDrop rightDrop bottom="45%" />
       <div className="container about">
         <div className="row row-gap-b">
           <div className="grid-gap col-lg-6 grid-align direction-column">
