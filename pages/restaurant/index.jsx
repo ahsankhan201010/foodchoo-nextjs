@@ -1,5 +1,5 @@
 import restaurantFC from "./../../assets/images/icons/restaurantFC.png";
-import DownloadActions from "../../uiComponents/downloadBtns/DownloadActions";
+import DownloadActions from "../../uiComponents/downloadActions/DownloadActions";
 import DetailedDescription from "../../uiComponents/DetailedDescription/DetailedDescription";
 
 const Restaurant = () => {
