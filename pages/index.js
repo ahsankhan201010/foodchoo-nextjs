@@ -14,6 +14,7 @@ import mapBg from "../assets/images/sample/map-background.png";
 import mokAppBg from "../assets/images/sample/mok-app-bg.png";
 import mikeLocationIcon from "../assets/images/icons/mike-location.png";
 import abrahamLocationIcon from "../assets/images/icons/abraham-location.png";
+import MainSVG from "../uiComponents/mainSVG/MainSVG";
 
 const Home = () => {
   const [foodMenuModal, setFoodMenuModal] = useState(false);
@@ -92,7 +93,7 @@ const Home = () => {
                 </Fade>
               </div>
               <div className="col-lg-7 food-van">
-                <img src={Section01.src} alt="van" />
+                <MainSVG />
               </div>
             </div>
           </div>

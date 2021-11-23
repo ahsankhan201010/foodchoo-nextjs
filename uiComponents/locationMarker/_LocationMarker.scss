@@ -1,6 +1,6 @@
 .location-mark {
   position: absolute;
-  animation: moveY infinite 3s;
+  animation: moveY infinite 8s;
   transition: $transition-light;
 
   &:nth-child(1) {

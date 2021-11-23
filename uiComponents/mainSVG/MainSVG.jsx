@@ -1,15 +1,15 @@
 import style from "./MainSVG.module.css";
 const MainSVG = () => {
   return (
-    <div>
+    <div className={style.center_svg}>
       <svg
+        className={style.svg}
         id="svg"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         width="660"
         height="400"
-        viewBox="0 0 660 400"
-      >
+        viewBox="0 0 660 400">
         <image
           id="Group_6817"
           data-name="Group 6817"
