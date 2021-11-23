@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import {NavLink} from "./../navLink/NavLink"
+import { NavLink } from "./../navLink/NavLink";
 import Slider from "../slider/Slider";
 import { HiMenu } from "react-icons/hi";
 import Button from "../button/Button";
 import Logo from "../../assets/images/logo/logo_red.svg";
-
 
 // const NavItem = ({ children, path, activeLink, setActiveLink }) => {
 //   return (
@@ -49,11 +48,24 @@ const Navbar = () => {
       </div>
       <div className="menuItemArea">
         <div className="navSimpleItems">
-          <NavLink href="/" exact className="nav-item nav-link">Home</NavLink>
-          <NavLink href="/about" className="nav-item nav-link">About</NavLink>
-          <NavLink href="/" className="nav-item nav-link">Pioneer Program</NavLink>
-          <NavLink href="/faq" className="nav-item nav-link">FAQ’s</NavLink>
-          <NavLink href="/contact" className="nav-item nav-link">Contact</NavLink>
+          <NavLink href="/" exact className="nav-item nav-link">
+            Home
+          </NavLink>
+          <NavLink href="/about" className="nav-item nav-link">
+            About
+          </NavLink>
+          <NavLink href="/restaurant" className="nav-item nav-link">
+            Restaurant
+          </NavLink>
+          <NavLink href="/customer" className="nav-item nav-link">
+            Customer
+          </NavLink>
+          <NavLink href="/faq" className="nav-item nav-link">
+            FAQ’s
+          </NavLink>
+          <NavLink href="/contact" className="nav-item nav-link">
+            Contact
+          </NavLink>
         </div>
       </div>
       <div className="nav-btns">
