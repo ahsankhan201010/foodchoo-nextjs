@@ -1,5 +1,23 @@
 .i-am-about {
+  .row-gap-b {
+    margin: 0 0 180px 0;
+  }
+
+  .direction-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   .food-image-wrapper {
     width: 100%;
+  }
+
+  .center-x {
+    display: flex;
+    justify-content: center;
+  }
+  .min-height {
+    min-height: 500px;
   }
 }
