@@ -1,0 +1,58 @@
+.delivery_sticker {
+  animation: delivery 4s ease-in-out infinite;
+  transform: translateX(-50px);
+}
+
+
+.grocery_sticker {
+    animation: grocery 5s ease-in-out infinite;
+
+}
+
+.marker_sticker {
+    animation: marker 3s ease-in-out infinite;
+
+}
+
+@keyframes delivery {
+    0% {
+      transform: translateX(-50px);
+    }
+  
+    50% {
+      transform: translateX(0px);
+    }
+  
+    100% {
+      transform: translateX(-50px);
+    }
+  }
+@keyframes grocery {
+    0% {
+      transform: translateX(0px);
+    }
+  
+    50% {
+      transform: translateX(50px);
+    }
+  
+    100% {
+      transform: translateX(0px);
+    }
+  }
+@keyframes marker {
+    0% {
+      transform: translateX(0px);
+    }
+  
+    50% {
+      transform: translateX(10px);
+    }
+  
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  
+
+  
