@@ -16,18 +16,18 @@ const Button = ({ children, customClass }) => {
   );
 };
 
-const FoodMenu = ({ onHide }) => {
+const FoodMenu = ({ onHide, cuisines }) => {
   return (
     <div className="food-menu">
       <div className="container f-menu-items">
         <h1 className="f-menu-title">Select Desired Menu</h1>
         <div className="row f-menu-row">
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map(() => {
+          {cuisines && cuisines.map(({_id, name}) => {
             return (
               <>
-                <div className="col-lg-2 col-md-3 col-6 my-3">
+                <div key={_id} className="col-lg-2 col-md-3 col-6 my-3">
                   <div>
-                    <Button customClass="f-menu-btn">Menu Name</Button>
+                    <Button customClass="f-menu-btn">{name}</Button>
                   </div>
                 </div>
               </>
