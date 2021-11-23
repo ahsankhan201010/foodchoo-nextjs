@@ -1,7 +1,8 @@
-import React from 'react' 
+import React from "react";
 import { Collapse } from "antd";
+import Fade from "react-reveal/Fade";
 
-import DownloadActions from '../../uiComponents/downloadActions/DownloadActions';
+import DownloadActions from "../../uiComponents/downloadActions/DownloadActions";
 
 const { Panel } = Collapse;
 
@@ -12,32 +13,37 @@ const text = `
 `;
 
 const faq = () => {
-    return (
-        <div className="layout i-am-faq">
-        <div className="container">
-              <div className="row">
-                  <div className="col-lg-12 d-flex justify-content-center ">
-                      <h1 className="theme-title theme-title-red m-auto theme-title-max">FAQ'S</h1>
-                  </div>
-                  <div className="col-lg-2"></div>
-                  <div className="col-lg-8 fields-wrapper">
-                  <Collapse expandIconPosition={"right"} className="faq-collapse">
-                    <Panel header="Question 1" key="1">
-                        <div>{text}</div>
-                    </Panel>
-                    <Panel header="Question 2" key="2">
-                        <div>{text}</div>
-                    </Panel>
-                    <Panel header="Question 3" key="3">
-                        <div>{text}</div>
-                    </Panel>
-                </Collapse>
-                  </div>
-                  <div className="col-lg-2"></div>  
-                  <DownloadActions/>
-              </div>
+  return (
+    <div className="layout layout-gap i-am-faq">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12 d-flex justify-content-center ">
+            <Fade cascade top>
+              <h1 className="theme-title theme-title-red m-auto theme-title-max">
+                FAQ'S
+              </h1>
+            </Fade>
           </div>
+
+          <div className="col-lg-8 m-auto fields-wrapper">
+            <Fade top>
+              <Collapse expandIconPosition={"right"} className="faq-collapse">
+                <Panel header="Question 1" key="1">
+                  <div>{text}</div>
+                </Panel>
+                <Panel header="Question 2" key="2">
+                  <div>{text}</div>
+                </Panel>
+                <Panel header="Question 3" key="3">
+                  <div>{text}</div>
+                </Panel>
+              </Collapse>
+            </Fade>
+          </div>
+        </div>
+        <DownloadActions />
       </div>
-    )
-}
-export default faq
+    </div>
+  );
+};
+export default faq;

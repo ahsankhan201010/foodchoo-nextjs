@@ -7,7 +7,7 @@
 
 .styled-btn {
   &.red {
-    background: $theme-gradient;
+    background: $theme-color;
     color: $clr-white;
     &:focus {
       box-shadow: 0 0 4px $theme-color;

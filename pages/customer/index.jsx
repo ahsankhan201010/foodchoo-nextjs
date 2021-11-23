@@ -10,7 +10,7 @@ const Customer = () => {
     "All you need to do to get food from a FoodChoo Pop up menu is download the app here",
   ];
   return (
-    <div className="i-am-customer layout">
+    <div className="i-am-customer layout-gap layout">
       <div className="container">
         <DetailedDescription
           description={content}

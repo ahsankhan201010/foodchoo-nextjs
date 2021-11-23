@@ -10,13 +10,14 @@ const Restaurant = () => {
     "The first step to joining the FoodChoo Pioneer Program is to submit your email here. We will send you and introductory email that explains in detail everything about the pioneer program and FoodChoo in general and allows a simple, short, and easy to follow sign up process.",
   ];
   return (
-    <div className="i-am-pioneer-program layout">
+    <div className="i-am-pioneer-program layout-gap layout">
       <div className="container">
         <DetailedDescription
           description={content}
           heading={"RESTAURANT"}
           bannerImage={restaurantFC}
         />
+
         <DownloadActions />
       </div>
     </div>
