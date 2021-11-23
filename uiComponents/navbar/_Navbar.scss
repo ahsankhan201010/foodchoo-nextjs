@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   display: grid;
-  grid-template-columns: max-content 1fr max-content;
+  grid-template-columns: max-content 1fr;
   font-size: 62.5%;
   box-sizing: border-box;
   padding: 0 7em 0em 14em;
@@ -23,7 +23,7 @@
 .menuItemArea {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   .navSimpleItems {
     display: flex;
     align-items: center;
@@ -48,9 +48,9 @@
   transition: $transition-light;
   text-decoration: none;
 
-      &:hover {
-        color: $theme-color;
-      }
+  &:hover {
+    color: $theme-color;
+  }
 }
 
 .activeLink {
@@ -61,6 +61,8 @@
   font-size: 30px;
   color: $theme-color;
   display: none;
+  margin-left: auto;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 880px) {
