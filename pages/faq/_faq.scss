@@ -1,0 +1,17 @@
+.faq-collapse{
+    background: none;
+    border: 0;
+    .ant-collapse-item{
+        border: 0;
+        box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.1);
+        margin: 10px 0px;
+        border-radius: 6px !important;
+        .ant-collapse-header {
+            padding: 8px 16px
+        }
+        .ant-collapse-content{
+            border-radius: 0px 0px 6px 6px;
+            border-top: 1px solid #ececec;
+        }
+    }
+}
