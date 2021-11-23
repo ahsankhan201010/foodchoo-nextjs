@@ -53,7 +53,7 @@ const Home = () => {
             <div className="row">
               <div className="col-lg-5">
                 <Fade duration={2000} delay={200} top>
-                  <h1 className="h-title h-title-white">
+                  <h1 className="theme-title-white theme-title">
                     A complete food and grocery delivery system
                   </h1>
                 </Fade>
@@ -92,7 +92,7 @@ const Home = () => {
             </div>
             <div className="col-lg-6">
               <Fade right>
-                <h1 className="h-title h-title-red my-3">
+                <h1 className="theme-title theme-title-red my-3">
                   A complete food and grocery delivery system
                 </h1>
                 <Paragraph className="h-desc my-3">
@@ -131,7 +131,7 @@ const Home = () => {
         className="container bottom-section my-5">
         <Fade left>
           <div className="items">
-            <h1 className="h-title h-title-black">
+            <h1 className="theme-title theme-title-black">
               A complete food and grocery delivery system
             </h1>
             <Paragraph className="h-desc">

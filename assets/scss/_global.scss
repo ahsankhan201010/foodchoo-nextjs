@@ -17,8 +17,8 @@ h3 {
 
 h1,
 h2,
-h3  {
-  font-family:$font-family-primary;
+h3 {
+  font-family: $font-family-primary;
 }
 
 ::selection {
@@ -51,3 +51,58 @@ button {
 .layout {
   margin: 65px 0 0 0;
 }
+
+// theme titles styles
+
+.theme-title-white {
+  position: relative;
+  color: $clr-white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 4px;
+    width: 150px;
+    background-color: $clr-white;
+  }
+}
+
+.theme-title-black {
+  position: relative;
+  color: $clr-dark;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 4px;
+    width: 150px;
+    background-color: $clr-dark;
+  }
+}
+
+.theme-title-red {
+  position: relative;
+  color: $clr-dark;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 4px;
+    width: 150px;
+    background-color: $theme-color;
+  }
+}
+
+.theme-title {
+  margin: 0 0 18px 0 !important;
+  padding: 0 0 10px 0;
+  position: relative;
+  font-size: $f-x-lg;
+}
+
+// theme titles styles end

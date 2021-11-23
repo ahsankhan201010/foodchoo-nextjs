@@ -5,56 +5,6 @@
     color: $clr-white;
   }
 
-  .h-title-white {
-    position: relative;
-    color: $clr-white;
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0px;
-      height: 4px;
-      width: 150px;
-      background-color: $clr-white;
-    }
-  }
-
-  .h-title-black {
-    position: relative;
-    color: $clr-dark;
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0px;
-      height: 4px;
-      width: 150px;
-      background-color: $clr-dark;
-    }
-  }
-
-  .h-title-red {
-    position: relative;
-    color: $clr-dark;
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0px;
-      height: 4px;
-      width: 150px;
-      background-color: $theme-color;
-    }
-  }
-
-  .h-title {
-    margin: 0 0 18px 0 !important;
-    padding: 0 0 10px 0;
-    position: relative;
-    font-size: $f-x-lg;
-  }
   .h-desc {
     margin: 20px 10px 20px 10px;
   }
