@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 const DownloadActions = () => {
   return (
     <>
-      <Fade duration={2000} delay={1000} bottom>
+      <Fade duration={1000} delay={500} bottom>
         <div className="row download-btn-gap-y">
           <div className="mb-3 col-lg-12 d-flex justify-content-center">
             <h1 className="theme-title theme-title-red theme-title-max">
