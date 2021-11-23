@@ -3,21 +3,74 @@
     margin: 0 0 180px 0;
   }
 
+  .about {
+    margin-bottom: 50px;
+  }
+
   .direction-column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
+  .grid-align {
+    max-height: 400px;
+  }
+
   .food-image-wrapper {
-    width: 100%;
+    img {
+      width: 100%;
+    }
   }
 
   .center-x {
     display: flex;
     justify-content: center;
   }
+  .column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .min-height {
     min-height: 500px;
+  }
+
+  .burgur-object-wrapper {
+    .bg-object {
+      position: relative;
+      padding: 40px 0;
+      padding-bottom: 0;
+
+      .bg-thumb {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        object-fit: cover;
+        max-height: 430px;
+        min-height: 430px;
+      }
+
+      .wrap-rev {
+        flex-wrap: wrap-reverse;
+
+        .row-align {
+          margin-top: 100px;
+        }
+      }
+    }
+    .burger-thumb {
+      perspective: 1000px;
+      img {
+        width: 100%;
+        transition: $transition-high;
+        transform-style: preserve-3d;
+
+        &:hover {
+          transform: translateZ(50px) rotateY(10deg);
+        }
+      }
+    }
   }
 }

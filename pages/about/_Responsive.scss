@@ -1,0 +1,16 @@
+@media screen and (max-width: 991px) {
+  .i-am-about {
+    .grid-gap {
+      margin: 0 0 40px;
+    }
+    .row-gap-b {
+      margin: 0 0 40px 0;
+    }
+    .min-height {
+      min-height: fit-content;
+    }
+    img.mx-2 {
+      width: 120px;
+    }
+  }
+}
