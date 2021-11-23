@@ -108,6 +108,12 @@ button {
   padding: 0 0 10px 0;
   position: relative;
   font-size: $f-x-lg;
+  font-weight: $weigth-medium;
+}
+.theme-title-max {
+  &::after {
+    width: 100%;
+  }
 }
 
 .theme-title-max {
@@ -156,4 +162,15 @@ button {
   .theme-head-lg {
     font-size: $f-md;
   }
+}
+.w-fit-content {
+  width: fit-content;
+}
+
+.ant-input:focus,
+.ant-input-focused {
+  border-color: #8c8c8c;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.1);
+  border-right-width: 1px !important;
+  outline: 0;
 }
