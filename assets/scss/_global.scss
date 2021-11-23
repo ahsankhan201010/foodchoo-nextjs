@@ -2,6 +2,10 @@ html {
   font-size: 62.5%;
 }
 
+body{
+  width: 100%;
+  overflow-x: hidden;
+}
 * {
   margin: 0;
   padding: 0;
@@ -50,6 +54,7 @@ button {
 
 .layout {
   margin: 65px 0 0 0;
+  overflow-x:hidden;
 }
 
 .layout-gap {

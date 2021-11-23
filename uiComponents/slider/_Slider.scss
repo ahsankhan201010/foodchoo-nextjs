@@ -51,12 +51,12 @@
   padding: 2em;
 
   a {
-    color: $theme-color;
+    color: $clr-dark ;
     transition: $transition-light;
     text-decoration: none;
 
     &:hover {
-      color: $clr-dark;
+      color: $theme-color ;
     }
   }
 }

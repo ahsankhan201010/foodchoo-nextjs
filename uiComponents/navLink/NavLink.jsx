@@ -15,7 +15,7 @@ NavLink.defaultProps = {
     exact: false
 };
 
-function NavLink({ href, exact, children, ...props }) {
+function NavLink({ href, exact, children, setNavbar, ...props }) {
     const { pathname } = useRouter();
     const isActive = exact ? pathname === href : pathname.startsWith(href);
 
@@ -24,12 +24,27 @@ function NavLink({ href, exact, children, ...props }) {
     }
 
     return (
-        <Link href={href}>
-            <a {...props}>
-            <Header fontSize={24} fontWeight="medium">
-                {children}
-            </Header>
-            </a>
-        </Link>
+        <>
+            {
+                !setNavbar ?         
+                    <Link href={href}>
+                        <a {...props}>
+                        <Header fontSize={24} fontWeight="medium">
+                            {children}
+                        </Header>
+                        </a>
+                    </Link> :
+                    <div className="slider-list-item">
+                        <Link href={href}>
+                        <a {...props}>
+                            <Header onClick={() => setNavbar(false)} fontWeight="medium" fontSize={24}>
+                                {children}
+                            </Header>
+                        </a>
+                        </Link>
+                    </div>
+            }
+        </>
+
     )
 }
