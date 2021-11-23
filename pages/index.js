@@ -117,7 +117,7 @@ const Home = () => {
       </div>
       <div className="container app-mok">
         <Fade duration={2000} top>
-          <h1 className="text-center my-5">
+          <h1 className="text-center my-5 theme-head-x-lg">
             A complete food and grocery delivery system
           </h1>
         </Fade>

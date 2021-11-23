@@ -31,7 +31,7 @@ const DeliveryServices = () => {
         <div className="row">
           <div className="col-lg-12">
             <Fade duration={2000} top>
-              <h1 className="text-center mb-5">
+              <h1 className="text-center mb-5 theme-head-x-lg">
                 A complete food and grocery delivery system
               </h1>
             </Fade>
