@@ -1,54 +1,26 @@
 import React, { useEffect, useState } from "react";
-import Header from "../header/Header";
-// import { Link } from "next/link";
-// import Dropdown from "./../Dropdown/Dropdown";
-// import logo from "./../../assets/images/logo.png";
-// import ham from "./../../assets/images/ham.png";
+import Link from "next/link";
+import {NavLink} from "./../navLink/NavLink"
 import Slider from "../slider/Slider";
 import { HiMenu } from "react-icons/hi";
 import Button from "../button/Button";
 import Logo from "../../assets/images/logo/logo_red.svg";
 
-var options = [
-  {
-    name: "First Module",
-    to: "/first-module",
-  },
-  {
-    name: "Second Module",
-    to: "/second-module",
-  },
-  {
-    name: "Third Module",
-    to: "/third-module",
-  },
-  {
-    name: "Forth Module",
-    to: "/fourth-module",
-  },
-];
 
-const NavItem = ({ children, path }) => {
-  return (
-    <div
-      // style={{
-      //   borderBottom:
-      //     pathname === path
-      //       ? "1px solid var(--primary-color-one)"
-      //       : "1px solid transparent",
-      // }}
-      className="navItem">
-      <a href={path}>
-        <Header
-          //   color={pathname === path ? "var(--primary-color-one)" : "black"}
-          fontSize={24}
-          fontWeight="medium">
-          {children}
-        </Header>
-      </a>
-    </div>
-  );
-};
+// const NavItem = ({ children, path, activeLink, setActiveLink }) => {
+//   return (
+//     <div
+//       className={`${activeLink ? "activeLink" : ""} navItem`} onClick={() => {setActiveLink(!activeLink) ; console.log(activeLink)}}>
+//       <Link href={path}>
+//         <Header
+//           fontSize={24}
+//           fontWeight="medium">
+//           {children}
+//         </Header>
+//       </Link>
+//     </div>
+//   );
+// };
 
 const Navbar = () => {
   var [navbar, setNavbar] = useState(false);
@@ -77,11 +49,11 @@ const Navbar = () => {
       </div>
       <div className="menuItemArea">
         <div className="navSimpleItems">
-          <NavItem path="/">Home</NavItem>
-          <NavItem path="/">About</NavItem>
-          <NavItem path="/">Pioneer Program</NavItem>
-          <NavItem path="/">FAQ’s</NavItem>
-          <NavItem path="/">Contact</NavItem>
+          <NavLink href="/" exact className="nav-item nav-link">Home</NavLink>
+          <NavLink href="/about" className="nav-item nav-link">About</NavLink>
+          <NavLink href="/" className="nav-item nav-link">Pioneer Program</NavLink>
+          <NavLink href="/faq" className="nav-item nav-link">FAQ’s</NavLink>
+          <NavLink href="/contact" className="nav-item nav-link">Contact</NavLink>
         </div>
       </div>
       <div className="nav-btns">

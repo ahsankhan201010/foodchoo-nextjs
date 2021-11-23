@@ -4,7 +4,6 @@ import CButton from "../../uiComponents/button/Button";
 const Button = ({ children, customClass }) => {
   const [selectedBtn, setSelectedBtn] = useState(false);
 
-  console.log(selectedBtn, "selectedBtn");
   return (
     <>
       <button
