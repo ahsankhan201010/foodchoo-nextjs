@@ -12,7 +12,7 @@ const Customer = () => {
     return (
         <div className="i-am-customer layout">
             <div className="container">
-                    <DetailedDescription description={content} heading={"CUSTOMER"} bannerImage={restaurantFC}/>
+                <DetailedDescription description={content} heading={"CUSTOMER"} bannerImage={restaurantFC} />
                 <DownloadActions />
             </div>
         </div>
