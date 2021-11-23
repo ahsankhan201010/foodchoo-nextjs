@@ -36,6 +36,8 @@ const Navbar = () => {
     window.addEventListener("scroll", scrollTracker);
   }, []);
   // console.log(`scroll value - ${scroll}`);
+
+  console.log(navbar);
   return (
     <div
       style={{

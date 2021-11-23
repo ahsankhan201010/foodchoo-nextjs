@@ -3,7 +3,7 @@ import React from "react";
 import Header from "../header/Header";
 // import Arrow from "./../../assets/images/arrow-right.png";
 import { Link } from "next/link";
-import { HiOutlineX } from "react-icons/hi";
+import { HiChevronRight } from "react-icons/hi";
 
 const Backdrop = ({ navbar, setNavbar }) => (
   <div
@@ -35,7 +35,7 @@ const Slider = ({ setNavbar, navbar }) => {
         }}
         className="slider">
         <div className="slider-header">
-          <HiOutlineX
+          <HiChevronRight
             onClick={() => setNavbar(false)}
             className="arrow-right"
           />
@@ -44,21 +44,24 @@ const Slider = ({ setNavbar, navbar }) => {
           <SliderListItem exact setNavbar={setNavbar} to="/">
             Home
           </SliderListItem>
-          <SliderListItem setNavbar={setNavbar} to="/first-module">
+          <SliderListItem setNavbar={setNavbar} to="/about">
             About
           </SliderListItem>
-          <SliderListItem setNavbar={setNavbar} to="/second-module">
-            Pioneer Program
+          <SliderListItem setNavbar={setNavbar} to="/restaurant">
+            Restaurant
           </SliderListItem>
-          <SliderListItem setNavbar={setNavbar} to="/third-module">
+          <SliderListItem setNavbar={setNavbar} to="/customer">
+            Customer
+          </SliderListItem>
+          <SliderListItem setNavbar={setNavbar} to="/faq">
             FAQ’s
           </SliderListItem>
-          <SliderListItem setNavbar={setNavbar} to="/fourth-module">
+          <SliderListItem setNavbar={setNavbar} to="/contact">
             Contact
           </SliderListItem>
-          <SliderListItem setNavbar={setNavbar} to="/fourth-module">
+          {/* <SliderListItem setNavbar={setNavbar} to="/fourth-module">
             Login
-          </SliderListItem>
+          </SliderListItem> */}
         </div>
       </div>
       <Backdrop navbar={navbar} setNavbar={setNavbar} />

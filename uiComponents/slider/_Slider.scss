@@ -28,13 +28,11 @@
   color: $theme-color;
   display: flex;
   align-items: center;
-  padding: 5px 20px;
+  padding: 5px 10px;
 }
 
 .arrow-right {
   cursor: pointer;
-  width: 15px;
-  height: 15px;
 }
 
 .slider-header-logo {
@@ -81,7 +79,7 @@
   color: var(--primary-color-one) !important;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 991px) {
   .slider {
     display: block;
   }

@@ -44,7 +44,9 @@
     .bottom-section {
       min-height: fit-content;
       padding: 0px 0;
-      background-image: unset;
+      // background-image: unset;
+      background-blend-mode: overlay;
+      background-color: #ffffffd1;
     }
   }
 }
