@@ -10,17 +10,17 @@ import bgObject from "../../assets/images/sample/Bg-Object.png";
 const DeliveryServices = () => {
   const wrapper = useRef(null);
 
-  // useEffect(() => {
-  //   const onScroll = () => {
-  //     //   console.log(window.scrollY);
-  //     var bounding = wrapper.current.getBoundingClientRect();
-  //     console.log(window.innerHeight - bounding.top);
-  //   };
-  //   window.addEventListener("scroll", onScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", onScroll);
-  //   };
-  // }, []);
+  useEffect(() => {
+    const onScroll = () => {
+      //   console.log(window.scrollY);
+      var bounding = wrapper.current.getBoundingClientRect();
+      console.log(window.screenY < bounding.top / bounding.top);
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, []);
 
   return (
     <div
