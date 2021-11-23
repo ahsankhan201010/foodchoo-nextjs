@@ -45,9 +45,7 @@ const Navbar = () => {
       className="navbar">
       <Slider navbar={navbar} setNavbar={setNavbar} />
       <div style={{ alignItems: "flex-start" }} className="logoArea center">
-        <NavLink href="/" exact className="nav-item nav-link">
           <img className="logo" src={Logo.src} style={{ objectFit: "fill" }} />
-        </NavLink>
       </div>
       <div className="menuItemArea">
         <div className="navSimpleItems">
