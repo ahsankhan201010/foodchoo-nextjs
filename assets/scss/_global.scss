@@ -99,10 +99,17 @@ button {
 }
 
 .theme-title {
+  width: fit-content;
   margin: 0 0 18px 0 !important;
   padding: 0 0 10px 0;
   position: relative;
   font-size: $f-x-lg;
+}
+
+.theme-title-max {
+  &::after {
+    width: 100%;
+  }
 }
 
 .theme-head-x-lg {
